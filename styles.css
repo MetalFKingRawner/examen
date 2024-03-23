@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+#fondo {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 20px; 
+    min-width: 1200px;
+    min-height: 500px;
+    background-position: center;
+}
+
+#centro {
+    position: absolute;
+    background-color: white;
+    border: 10px solid #ccc; 
+    padding: 20px; 
+    min-width: 1000px;
+    min-height: 250px;
+    background-position: center;
+    top: 10%;
+    bottom: 10%;
+    left: 8%;
+    border-radius: 30px;
+}
+
+.centro-izquierda,
+.centro-derecha {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.centro-izquierda{
+    left: 0;
+    background-color: rgb(238, 238, 238);
+    background-image: url("cohete.png"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 25%;
+    border-radius: 20px 0px 0px 20px;
+    background-size: 100% auto;
+    background-position: center bottom;
+    padding-left: 30px;
+}
+
+.centro-izquierda label{
+    font-family: "Lobster", sans-serif;
+    font-size:115%;
+}
+
+.purple-text {
+    color: purple;
+}
+
+label {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.centro-izquierda img {
+    display: block; 
+    margin-top: 20px; 
+    margin-left: 10px;
+    max-width: 70%;
+}
+
+.centro-derecha{
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.fondo-izquierda,
+.fondo-derecha {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.fondo-izquierda {
+    left: 0;
+    background-color: rgb(197, 194, 194);
+    width: 25.5%;
+}
+
+.fondo-derecha {
+    right: 0;
+    background-color: rgb(224, 218, 218);
+    width: 74.5%;
+}
+
+.login-container h2 {
+    position: absolute; 
+    top: 50px;
+    left: 273px; 
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    font-size: 110%;
+    color: #1b262c;
+    padding: 5px 5px 5px 10px;
+    box-sizing: border-box;
+    border:#000000;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+
+button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button {
+    padding: 10px 75px;
+    background-color: #19993fe0;
+}
+
+.registro-container button {
+    background-color: purple;
+    padding: 5px 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    display: flex;
+    align-items: center;
+}
+
+.forgot-password label {
+    margin-right: 5px;
+    margin-top: 20px;
+    font-size:80%;
+}
+
+.forgot-password a{
+    color: purple;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.registro-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    display: flex;
+    align-items: center;
+}
+
+.registro-container label, .registro-container button {
+    margin-right: 10px;
+    font-size: 70%;
+}
